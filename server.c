@@ -52,6 +52,8 @@ fgets(buffer, 255, stdin);
 
 int wr = write(newsock_fd, buffer, strlen(buffer));
 
+printf("server: %s/n", buffer);
+
 int i = strncmp("bye", buffer, 3);
 if(i == 0){
 break;
